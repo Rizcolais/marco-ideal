@@ -1,0 +1,60 @@
+.mynav {
+    position: fixed;
+    top:25px;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    @include between {
+        background: $strongray;
+        width: 100%;    
+        top:0;
+    };
+    animation: 1s 1 forwards backford;
+} 
+
+.main-nav {
+    width: 92%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: flex-end;
+    @include between {
+        flex-wrap: wrap;
+    }
+}
+
+.main-nav a:first-child {
+    margin-right: auto;
+    margin-left: 0; 
+    padding: 25px 50px 25px 0;
+    @include between {
+        letter-spacing: 4px;
+        width: 100%;
+        padding-right: 0px;} 
+    }
+    
+    .main-nav__link {
+        @include between {
+            width: 33.33%;
+        } 
+    }
+    
+    .main-nav__link:nth-child(1n+1) {
+        margin-left: 40px;
+        padding-right: 0px;
+        padding-left: 0px;
+        @include between {
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+            padding: 0 0 20px;
+        }
+    } 
+    
+    .main-nav__link:nth-child(1) {
+        text-transform: uppercase;
+    }
+    
+    

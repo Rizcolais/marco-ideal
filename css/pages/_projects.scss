@@ -1,0 +1,70 @@
+.all-projects {
+    display: flex;
+    width:100%;
+    height:100%;
+    @include between {
+        flex-wrap: wrap;
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: center;
+    align-items: center;  
+    position:relative;  
+    @include between {
+        width: 100%;
+        height: 80vh;
+        
+    }
+}
+
+.project a:before {
+    content:'';
+    position:absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: .3s all ease-in-out;
+    @include between {
+        opacity:1;
+    }
+}
+
+.project a:hover:before {
+    opacity: 0.5;
+    @include between {
+        opacity: 1;
+    }
+}
+
+.project:nth-child(1) {
+    @include between {
+        margin-top: 100px;
+    }
+}
+
+.project:nth-child(1) a:before {
+    background: url(../img/annabelle.jpeg) center/cover;
+    @include between {
+        background-position: 50% 50%;
+    }
+}
+
+.project:nth-child(2) a:before {
+    background: url(../img/decathlon.png) center/cover;
+}
+
+.project:nth-child(3) a:before {
+    background: url(../img/eventoxtra-header.jpeg) center/cover;
+}
+
+.project:nth-child(4) a:before {
+    background: url(../img/flako.jpg) center/cover;
+}
+

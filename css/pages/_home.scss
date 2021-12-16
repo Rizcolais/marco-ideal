@@ -1,0 +1,32 @@
+.work {
+    @include center;
+    width: 70%;
+    @include push;
+    @include between {
+        width: 80%;
+    }
+} 
+
+.less-work {
+    width:60%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    @include between {
+        width:100%;
+    }
+} 
+
+.explore-more {
+    position: absolute;
+    top: 49.5%;
+    right: -5%;
+    width: auto;
+    height: 50px;
+    display: block;
+    padding: 14px 10px;
+    float: right;
+    background-color: rgba(44, 45, 45, 0);
+    @include between {
+    display: none;
+    }
+} 

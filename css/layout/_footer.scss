@@ -1,0 +1,38 @@
+.main-footer {
+    width: 100%;
+    position: absolute;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    @include between {
+        display: none;
+        }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    max-width: 92%;
+} 
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav a {
+    margin-left: 40px;
+}
+
+.best-xp {
+    margin-left: auto;
+}  
+
+////// footer de la page about //////
+
+.page-about .main-footer {
+    position: relative;
+}

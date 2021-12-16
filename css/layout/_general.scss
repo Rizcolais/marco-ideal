@@ -1,0 +1,171 @@
+body {
+    background-color: $black;  
+}
+
+a { 
+    text-decoration: none;
+    color: $white;
+} 
+
+.award {
+    position: fixed; 
+    z-index: 9; 
+    @include right-center;
+} 
+
+.page-projects .award {
+    @include between {
+        display: none;
+    }
+}
+
+.page-about .wrapper {
+    height: auto;
+}
+
+.wrapper {
+    height:100vh;
+}
+
+/* ========================== styles ======================== */
+
+h1 {
+    @include fontfamily (
+        $weight: 500, 
+        $height: 10vmin,
+        $size: 7vmax);
+        @include between {
+            @include fontfamily (
+                $size: 9vmax,
+                $height: 9vmax,
+            )
+        };
+        @include tablet {
+            @include fontfamily (
+                $size: 70px,
+                $height: 70px,
+            )
+        }
+} 
+
+h2 {
+    @include fontfamily (
+        $weight: 400,
+        $size: 14px,
+        $color:white,
+        $height: 30px,
+        $spacing: 1px,
+        $style: italic,
+        
+    )
+} 
+
+h3 {
+    text-align: center;
+    margin: 0;
+    @include fontfamily (
+    $size : 30px,
+    $height : 5vmin,
+    $weight: 500,);
+    @include between {
+        margin-bottom: 30px;
+        @include fontfamily (
+            $size: 60px,
+        );
+    }
+} 
+
+.long-line {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.text-span, .main-nav__link, .footer-nav a {
+    @include fontfamily (
+        $weight: 400,
+        $height: 20px,
+        $size: 12px,
+        $color:white,
+        $spacing: 1px,
+    )
+} 
+
+.best-xp {
+    @include fontfamily (
+        $color:#5a5a58,
+        $size: 12px,
+        $height: 20px,
+        $style: italic
+    )
+}
+
+.cat {
+    text-transform: uppercase;
+    text-align: center;
+    @include fontfamily (
+        $color : white,
+        $height : 20px,
+        $weight : 400,
+        $spacing : 2px,
+        $size : 10px,
+    );
+    @include between {
+        @include fontfamily (
+            $size: 12px,
+            $height: 30px,
+        )
+    }
+}
+
+.text-about {
+    text-align: left;
+    @include fontfamily (
+        $color: $white,
+        $size: 14px,
+        $weight: 400,
+        $spacing: 1px,
+        $height: 28px,
+    );
+}
+
+.client, .personal {
+    text-transform: uppercase;
+}
+
+.title-contact {
+    @include fontfamily (
+        $size: 32px,
+        $height: 30px,
+        $weight: 500,
+        $color: $white,
+    )
+}
+
+.w-input {
+    @include fontfamily (
+        $size: 14px,
+        $color: $threegray,
+        $height: 1.4, 
+    )
+}
+
+//////// ========== key frames ============ /////////////
+
+@keyframes panneau {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes backford {
+    from {
+        transform: translateX(-25);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}

@@ -1,0 +1,95 @@
+.contact {
+    position: fixed;
+    right: -600px;
+    z-index: 99;
+    width: 600px;
+    height:100vh;
+    background-color: $strongray;
+}
+
+.contact.active {
+    right: 0px;
+}
+
+.close-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-image: url(../img/close.svg);
+    background-position: 50% 50%;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    left: 530px;
+}
+
+.myform {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+
+.title-contact {
+    width:100%;
+    margin: 40px 0 10px;
+}
+
+.border-form {
+    border: 1px none $gray;
+    border-radius: 2px;
+}
+
+.text-field-message {
+    width:510px;
+    height:200px; 
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.text-field-mail {
+    width:510px;
+    height:50px;
+    margin-bottom: 20px;
+} 
+
+.text-field {
+    height:50px;
+    width:48%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.w-input {
+    width:100%;
+    height:38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    background-color: $lightgray;
+    border: 1px none $lightgray;
+    border-radius: 2px;
+    height:100%;
+    
+}
+
+body:before {
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%; 
+    top: 0; 
+    z-index: 100;
+    background: rgb(27,27,27);
+    animation: 1s 1 forwards panneau; 
+}
+
+.contact-display {
+    display: flex;
+    width:510px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
